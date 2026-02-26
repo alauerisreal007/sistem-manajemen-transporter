@@ -94,7 +94,7 @@ class DeliveryController extends Controller
             $query->whereDate('created_at', '<=', $request->date_to);
         }
 
-        $deliveries = $query->lates()->paginate(10)->withQueryString();
+        $deliveries = $query->latest()->paginate(10)->withQueryString();
 
         // Summary statistik
         $summary = Delivery::selectRaw("
