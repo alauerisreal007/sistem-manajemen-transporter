@@ -91,7 +91,7 @@ Route::middleware(['auth', 'role:user'])->prefix('user')->name('user.')->group(f
     Route::post('/checkpoints/{checkpoint}/end-loading', [DriverController::class, 'endLoading'])->name('endLoading');
 
     // History
-    Route::get('/history-delivery', [DriverController::class, 'history'])->name('history');
+    Route::get('/history-delivery', [DeliveryController::class, 'history'])->name('history');
     Route::post('/checkpoints/{checkpoint}/upload-photo', [DriverController::class, 'uploadPhoto'])->name('uploadPhoto');
 });
 
