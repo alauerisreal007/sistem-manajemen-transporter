@@ -67,7 +67,7 @@
             @enderror
         </div>
 
-        <!-- Remember Me -->
+        <!-- Remember Me
         <div class="flex items-center justify-between mt-4">
             <label for="remember_me" class="flex items-center gap-2 cursor-pointer group">
                 <input id="remember_me" type="checkbox" name="remember" class="w-4 h-4 rounded border-gray-300 text-teal-600 focus:ring-teal-500 focus:ring-offset-0 cursor-pointer">
@@ -79,15 +79,15 @@
                     {{ __('Forgot your password?') }}
                 </a>
             @endif
-        </div>
+        </div> -->
 
         <!-- Submit Button -->
         <div class="flex items-center justify-center mt-4">
-            @if (Route::has('password.request'))
+            <!-- @if (Route::has('password.request'))
                 <a class="font-semibold text-teal-600 hover:text-teal-700 hover:underline underline-offset-2 transition-colors" href="{{ route('register') }}">
                     {{ __('Don\'t have an account?') }}
                 </a>
-            @endif
+            @endif -->
 
             <x-primary-button class="ms-3">
                 {{ __('Log in') }}
