@@ -7,7 +7,7 @@ use App\Http\Controllers\DriverController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DeliveryController;
 use App\Http\Controllers\LocationController;
-use App\Http\Controllers\SuperAdminUserController;
+use App\Http\Controllers\ReportController;
 use App\Http\Controllers\Admin\DashboardAdminController;
 
 // Route::get('/', function () {
