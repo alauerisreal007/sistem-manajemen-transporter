@@ -381,9 +381,9 @@ class DriverController extends Controller
             );
 
             // Simpan drive file id signature
-            if ($signatureDriveId) {
+            if ($signatureFileId) {
                 $checkpoint->update([
-                    'signature_drive_file_id' => $signatureDriveId
+                    'signature_drive_file_id' => $signatureFileId
                 ]);
             }
 
